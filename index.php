@@ -3,6 +3,7 @@ require "src/Css.php";
 require "src/Utility.php";
  $css = new Css("This bilo");
 $css->output();
+print Css::$count;
 // $css->test();
 
 ?>

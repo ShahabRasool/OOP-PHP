@@ -2,6 +2,7 @@
 class Css{
     private $shahab;
     const PADDING = "p-16";
+    public static $count=0;
    public  $tailwind=["text-red-300", "text-2xl"];
 public function __construct($shahab)
 {
@@ -16,7 +17,5 @@ public function output(){
 
 
 }
-// public function test(){
-//     $this->output();
-// }
+
 }
