@@ -1,10 +1,15 @@
 <?php
 require "src/Css.php";
 require "src/Utility.php";
+require "src/ContaineredClass.php";
  $css = new Css("This bilo");
 $css->prepareMarkup();
 $css->render();
-print Css::$count;
+$container= new ContaineredClass("This class is from Container class");
+$container->prepareMarkup();
+$container->wrapperout();
+$container->render();
+// print Css::$count;
 // $css->test();
 
 ?>
